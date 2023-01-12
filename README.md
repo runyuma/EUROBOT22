@@ -1,38 +1,16 @@
-# capstone_EU2022
-
-#### 介绍
-capstone
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-# EUROBOT22
+# BSc thesis: EUROBOT competition 2022
+![image](img/Bsc_robot.jpg)
+![image](img/Bsc_robot2.jpg)
+# Dependencies
+- [ROS Navigation Stack](http://wiki.ros.org/navigation)
+- [Robot Pose EKF](http://wiki.ros.org/robot_pose_ekf)
+# Contribution
+- pkg capstone_manipulator/ & aruco_detect/: a grabbing system based on QR code detection
+![image](img/Bsc_visual.jpg)
+- pkg main_controller/: define working flows of competition, using ROS::ACTION to define and achieve manipulating and moving tasks
+- deployed Extended kalman filter localization, AMCL particle localization on this robot.
+![image](img/Bsc_costmap.jpg)
+- deployed Dijkstra (global planner) and TEB(local planner) algorthim to plan trajectory.
+![image](img/Bsc_navigation.jpg)
+- Overall control system design
+![image](img/Bsc_controlsystem.jpg)
