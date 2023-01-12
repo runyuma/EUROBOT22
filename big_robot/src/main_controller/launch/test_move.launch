@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch" />
+<node pkg="aruco_detect" type="aruco_detect" name="aruco_detect"  />
+<node pkg="main_controller" type="main.py" name="main_controller"  output = "screen"/>
+<node pkg="main_controller" type="moving.py" name="moving"  output = "screen"/>
+</launch>

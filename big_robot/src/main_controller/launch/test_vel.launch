@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch" />
+<include file="$(find wheeltec_robot_rc)/launch/keyboard_teleop.launch" />
+<node pkg="main_controller" type="test_vel.py" name="main_controller"  output = "screen"/>
+
+</launch>

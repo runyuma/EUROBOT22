@@ -1,0 +1,18 @@
+# This is an action definition file, which has three parts: the goal, the
+# result, and the feedback.
+
+# 1. the goal, to be sent by the client
+std_msgs/Float64MultiArray target_value     # target_value [xyzrpy] in robot_frame
+uint8 target_color  #target_color of sample  0:whatever,the closest
+uint8 sample_mode #target posture of sample 0: on the ground 1: verticle
+uint8 target_mode #target posture of sample 0: grab 1:put 2:target joint
+---
+# 2: the result, to be sent by the server upon completion
+# have done
+bool done
+
+---
+# 3: the feedback, to be sent periodically by the server during execution.
+# result of visual servo
+std_msgs/Float32MultiArray relative_pos
+

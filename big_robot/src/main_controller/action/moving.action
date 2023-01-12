@@ -1,0 +1,18 @@
+# This is an action definition file, which has three parts: the goal, the
+# result, and the feedback.
+
+# 1. the goal, to be sent by the client
+uint8 moving_mode
+std_msgs/Float32MultiArray goal_pos
+std_msgs/Float32MultiArray goal_vel
+
+---
+# 2: the result, to be sent by the server upon completion
+# have done
+bool done
+
+---
+# 3: the feedback, to be sent periodically by the server during execution.
+# result of visual servo
+std_msgs/Float32MultiArray odom
+
